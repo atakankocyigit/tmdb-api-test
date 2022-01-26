@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AllTestsSuite" verbose="1" parallel="tests" thread-count="4">
+
+	<test name="AccountTest">
+		<classes>
+			<class name="com.tmdb.test.AccountTest"></class>
+		</classes>
+	</test>
+
+	<test name="CompanyTest">
+		<classes>
+			<class name="com.tmdb.test.CompanyTest"></class>
+		</classes>
+	</test>
+
+	<test name="GenreTest">
+		<classes>
+			<class name="com.tmdb.test.GenreTest"></class>
+		</classes>
+	</test>
+
+	<test name="ListTest">
+		<classes>
+			<class name="com.tmdb.test.ListTest"></class>
+		</classes>
+	</test>
+
+	<test name="MovieTest">
+		<classes>
+			<class name="com.tmdb.test.MovieTest"></class>
+		</classes>
+	</test>
+
+</suite>
