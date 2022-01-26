@@ -17,7 +17,7 @@ import io.restassured.response.Response;
 public class GenreTest extends BaseServiceTest {
 
 	@Test
-	public void getTvGenres() {
+	public void getGenres() {
 		//Get Tv Genres
 		Response response = genreService.getGenres(ResponseSpec.getResponseSpec(200), "tv");
 		List<Genres> genres = response.jsonPath().getList("genres", Genres.class);
