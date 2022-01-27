@@ -6,21 +6,27 @@ In order to use the project, you must be a member of the TMDB page and then the 
 
 API key, session_id and username must be written into the variables in the file in \src\main\java\com\tmdb\spec\RequestSpec.java.
 
-Function tests included in the project:
-- Account -> Get Details
-- Account -> Mark as Favorite
-- Account -> Add to Watchlist
-- Account -> Get Favorite Movies
-- Account -> Get Movie Watchlist
-- Companies -> Get Details
-- Genres -> Get Movie List, Get TV List
-- Lists -> Create List
-- Lists -> Add Movie
-- Lists -> Remove Movies
-- Movies -> Get Top Rated
-- Movies -> Get Details
-- Movies -> Positive/Negative Rate Movie
-- Movies -> Delete Rating
+### Function tests included in the project:
+
+#### Account
+- Get Details
+- Mark as Favorite
+- Add to Watchlist
+- Get Favorite Movies
+- Get Movie Watchlist
+#### Companies
+- Get Details
+#### Genres
+- Get Movie List, Get TV List
+#### Lists
+- Create List
+- Add Movie
+- Remove Movies
+#### Movies
+- Get Top Rated
+- Get Details
+- Positive/Negative Rate Movie
+- Delete Rating
 
 Note: It may give an error after creating lists 4 or 5 times with the CreateList function. Even if the lists are deleted, an error may occur while generating the list with the same explanation. If the description of the requestBody variable in the ListService class is changed and retried, the function will work without error.
 
